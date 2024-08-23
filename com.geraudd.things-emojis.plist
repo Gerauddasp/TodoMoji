@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.geraudd.things-emojis</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Users/geraudd/.nvm/versions/node/v20.15.1/bin/node</string>
+        <string>/Users/geraudd/src/me/scripts/js/things/things-emojis.js</string>
+    </array>
+
+    <key>WorkingDirectory</key>
+    <string>/Users/geraudd/src/me/scripts/js/things</string>
+
+    <key>StartInterval</key>
+    <integer>300</integer> <!-- 300 seconds = 5 minutes -->
+
+    <key>RunAtLoad</key>
+    <true/>
+
+    <key>StandardOutPath</key>
+    <string>/Users/geraudd/src/me/scripts/js/things/logfile.log</string>
+
+    <key>StandardErrorPath</key>
+    <string>/Users/geraudd/src/me/scripts/js/things/logfile.log</string>
+</dict>
+</plist>

@@ -8,11 +8,11 @@
     <key>ProgramArguments</key>
     <array>
         <string>/Users/geraudd/.nvm/versions/node/v20.15.1/bin/node</string>
-        <string>/Users/geraudd/src/me/scripts/js/things/things-emojis.js</string>
+        <string>/Users/geraudd/src/me/TodoMoji/things-emojis.js</string>
     </array>
 
     <key>WorkingDirectory</key>
-    <string>/Users/geraudd/src/me/scripts/js/things</string>
+    <string>/Users/geraudd/src/me/TodoMoji</string>
 
     <key>StartInterval</key>
     <integer>3600</integer>
@@ -21,9 +21,9 @@
     <false/>
 
     <key>StandardOutPath</key>
-    <string>/Users/geraudd/src/me/scripts/js/things/logfile.log</string>
+    <string>/Users/geraudd/src/me/TodoMoji/logfile.log</string>
 
     <key>StandardErrorPath</key>
-    <string>/Users/geraudd/src/me/scripts/js/things/logfile.log</string>
+    <string>/Users/geraudd/src/me/TodoMoji/logfile.log</string>
 </dict>
 </plist>

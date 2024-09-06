@@ -56,7 +56,11 @@ function containsEmoji(text) {
 // Function to request emoji suggestions from OpenAI API
 async function requestEmojiFromChatGPT(taskName) {
   try {
-    const prompt = `Here is a task: "${taskName}". Please improve the task text by following these rules:
+    const prompt = `Here is a task:<BEGIN>${taskName}</END>
+    # Context:
+    I would like you to add emojis to make it more fun and engaging. The text should either be in French or English.
+
+    # Please improve the task text by following these rules:
     1. Replace words with relevant emojis where it's obvious
     Examples:
     Pizza -> 🍕
@@ -96,8 +100,7 @@ async function requestEmojiFromChatGPT(taskName) {
 
     4. Only respond with the updated task text, without any additional context or explanation.
     
-    Now apply these rules to the task: 
-    "${taskName}"`;
+    Now apply these rules to the task: <BEGIN>${taskName}</END>`;
 
     const response = await client.chat.completions.create({
       model: "gpt-4o-mini", // You can use GPT-4 or another model if preferred
